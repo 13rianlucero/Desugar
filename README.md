@@ -1,9 +1,11 @@
 # Desugar
 
+CPSC-439 Theory of Computation
+
 Team members:
 - Brian Lucero (just me)
 
-## Contents: 
+## CONTENTS: 
 
 ### desugar.cpp
 - Written in C++
@@ -14,3 +16,21 @@ Team members:
 
 ### desugar (executable)
 - runs via terminal command: `./desugar`
+
+## OUTPUT
+
+```
+temp_1 = NAND(I[1],I[1])
+temp_2 = NAND(X[2],temp_1)
+temp_3 = NAND(X[3],I[1])
+temp_4 = NAND(temp_2,temp_3)
+temp_5 = NAND(I[1],I[1])
+temp_6 = NAND(X[0],temp_5)
+temp_7 = NAND(X[1],I[1])
+temp_8 = NAND(temp_6,temp_7)
+temp_9 = NAND(I[0],I[0])
+temp_10 = NAND(temp_8,temp_9)
+temp_11 = NAND(temp_4,I[0])
+temp_12 = NAND(temp_10,temp_11)
+```
+
